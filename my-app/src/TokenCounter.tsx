@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const TokenCounter: React.FC = () => {
-  const [tokenCount, setTokenCount] = useState<number>(0);
+interface TokenCounterProps {
+  tokenCount: number;
+  setTokenCount: React.Dispatch<React.SetStateAction<number>>;
+}
+
+const TokenCounter: React.FC<TokenCounterProps> = ({ tokenCount, setTokenCount }) => {
 
   const handleButtonClick = () => {
-    setTokenCount(tokenCount + 1);
+    setTokenCount(prevCount => prevCount + 1); // Function to update based on previous state
   };
 
   return (
