@@ -2,6 +2,8 @@ using System.Threading.Tasks;
 using Google.Protobuf.WellKnownTypes;
 using Shouldly;
 using Xunit;
+using System;
+using AElf.Sdk.CSharp;
 
 namespace AElf.Contracts.HelloWorld
 {
@@ -9,18 +11,14 @@ namespace AElf.Contracts.HelloWorld
     public class HelloWorldTests : TestBase
     {
         [Fact]
-        public async Task Update_ShouldUpdateMessageAndFireEvent()
+        public async Task Rng_Test()
         {
-            // Arrange
-            var inputValue = "Hello, World!";
-            var input = new StringValue { Value = inputValue };
+            await HelloWorldStub.Initialize.SendAsync(new Empty());
+            var result = await HelloWorldStub.CreateCharacter.SendAsync(new Empty());
+            var character = await HelloWorldStub.GetMyCharacter.CallAsync(Accounts[0].Address);
 
-            // Act
-            await HelloWorldStub.Update.SendAsync(input);
-
-            // Assert
-            var updatedMessage = await HelloWorldStub.Read.CallAsync(new Empty());
-            updatedMessage.Value.ShouldBe(inputValue);
+            Assert.NotEqual(new Character(), character);
+            Assert.Equal(result.Output, character);
         }
     }
     
