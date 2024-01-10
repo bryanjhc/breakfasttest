@@ -1,0 +1,12 @@
+/home/jackbean/aelf_ws/src/bin/Debug/net6.0/HelloWorld.deps.json
+/home/jackbean/aelf_ws/src/bin/Debug/net6.0/HelloWorld.dll
+/home/jackbean/aelf_ws/src/bin/Debug/net6.0/HelloWorld.pdb
+/home/jackbean/aelf_ws/src/obj/Debug/net6.0/HelloWorld.csproj.AssemblyReference.cache
+/home/jackbean/aelf_ws/src/obj/Debug/net6.0/HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+/home/jackbean/aelf_ws/src/obj/Debug/net6.0/HelloWorld.AssemblyInfoInputs.cache
+/home/jackbean/aelf_ws/src/obj/Debug/net6.0/HelloWorld.AssemblyInfo.cs
+/home/jackbean/aelf_ws/src/obj/Debug/net6.0/HelloWorld.csproj.CoreCompileInputs.cache
+/home/jackbean/aelf_ws/src/obj/Debug/net6.0/HelloWorld.dll
+/home/jackbean/aelf_ws/src/obj/Debug/net6.0/refint/HelloWorld.dll
+/home/jackbean/aelf_ws/src/obj/Debug/net6.0/HelloWorld.pdb
+/home/jackbean/aelf_ws/src/obj/Debug/net6.0/ref/HelloWorld.dll

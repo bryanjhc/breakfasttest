@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/jackbean/aelf_ws/src/HelloWorld.csproj": {}
+  },
+  "projects": {
+    "/home/jackbean/aelf_ws/src/HelloWorld.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jackbean/aelf_ws/src/HelloWorld.csproj",
+        "projectName": "HelloWorld",
+        "projectPath": "/home/jackbean/aelf_ws/src/HelloWorld.csproj",
+        "packagesPath": "/home/jackbean/.nuget/packages/",
+        "outputPath": "/home/jackbean/aelf_ws/src/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jackbean/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AElf.Sdk.CSharp": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "AElf.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/233/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
