@@ -3,6 +3,7 @@ import { IPortkeyProvider, MethodsBase } from "@portkey/provider-types";
 import "./App.css";
 import detectProvider from "@portkey/detect-provider";
 import SmartContract from "./SmartContract";
+import TokenCounter from "./TokenCounter"; // importing TokenCounter component
 
 function App() {
   const [provider, setProvider] = useState<IPortkeyProvider | null>(null);
@@ -31,6 +32,7 @@ function App() {
     <>
       <button onClick={connect}>Connect</button>
       <SmartContract provider={provider} />
+      <TokenCounter /> {/* Using TokenCounter in the JSX */}
     </>
   );
 }
